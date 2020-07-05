@@ -1,0 +1,37 @@
+body {
+
+	background-image: url('images/blue-crystalline.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.text-display {
+	color: white;
+}
+
+#myCanvas {
+	text-align: center;
+}
+
+.eight-ball {
+	height: 300px;
+	width: 300px;
+	color: blue;
+	background-color: black;
+	border-radius: 50%;
+	text-align: center;
+	margin-top: 200px;
+	padding-top: 125px;
+}
+
+.shk-btn {
+	background-color: black;
+	border-radius: 25px;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	margin-top: 50px;
+	margin-left: 70px;
+	height: 50px;
+	width: 200px;
+}

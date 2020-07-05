@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+
+	<div class="container" id="content">
+		<div class="welcome">
+			<h1>Mason Family Auto Parts and Service</h1>
+			<img src="images/neonbrand_mechanic.jpg" height="200px" width="300px">
+			</div>
+		</div>
+
+
+
+			
+
+
+<div class="container-fluid" id="dropButtons">
+	<div class="row">
+	<div class="col-sm-3">
+<div class="dropdown" id="Parts">
+	<button class="dropbtn">Parts</button>
+<div class="dropdown-content">
+	<a href="">Belts</a>
+	<a href="">Batteries</a>
+	<a href="">Alternators</a>
+	<a href="">Spark Plugs</a>
+</div>
+</div>
+</div>	
+
+<div class="col-sm-3">
+<div class="dropdown" id="tires">
+	<button class="dropbtn">Tires</button>
+<div class="dropdown-content">
+	<a href="">Stock rims</a>
+	<a href="">Stock tires</a>
+	<a href="">Aftermarket rims</a>
+	<a href="">Aftermarket tires</a>
+</div>
+</div>
+</div>
+
+<div class="col-sm-3">
+<div class="dropdown" id="service">
+	<button class="dropbtn">Service</button>
+<div class="dropdown-content">
+	<a href="">Schedule an Appointment</a>
+	<a href="">See a complete list of our services</a>
+</div>
+</div>
+</div>
+
+<div class="col-sm-3">
+<div class="dropdown" id="toolrntl">
+	<button class="dropbtn">Tool Rental</button>
+<div class="dropdown-content">
+	<a href="">See what we have available to loan</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="container-fluid" id="loginForm">
+<div class="form">
+
+	<h4>Mason Family Auto</h4>
+	<h4>Rewards Program</h4>
+<form action="action_page.php" method="post">
+	<label for="uName">Username:</label><br>
+	<input type="text" placeholder="Enter Username" id="uName" name="userName" required><br>
+	<label for="pswd"><br>Password:</label><br>
+	<input type="password" placeholder="Enter Password" id="pswd" name="password" required><br>
+	<input type="checkbox" onclick="shwPswd()">Show Password<br>
+	<script type="text/javascript">function shwPswd() {
+  var x = document.getElementById("pswd");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}</script>
+	<button type="submit" id="login">Login</button>
+	<button type="submit" id="cancel">Cancel</button><br>
+</form>
+
+<div class="signup-btn">
+	<a href="rewardsForm.html"><p class="signup">Signup</p></a>
+</div>
+
+</div>
+</div>	
+
+<footer>
+
+<div class="container-fluid" id="container-footer">
+	<div class="row">
+		<div class="col-sm-3">
+			<p><a href="">Home</a></p>
+	</div>
+	<div class="col-sm-3">
+		<p><a href="">About</a></p>
+	</div>
+	<div class="col-sm-3">
+		<p><a href="">Contact</a></p>
+	</div>
+	<div class="col-sm-3">
+		<p><a href="">Privacy Policy</a></p>
+	</div>
+</div>
+</div>
+
+</footer>
+
+</body>
+
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html> <html> 
+<head>
+<meta charset="utf-8">   
+<meta name="viewport" content="width =device-width">
+<title>Home</title>   
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css"> 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  
+</head> 
+<body>
+
+<div class="header">
+<img border="0" align="left" src="images/iguanaIcon.png" width="125px" height="100px"/>
+	<h1>istardly</h1>
+
+</div>
+
+
+
+
+
+
+	</div>
+</div>
+
+<div class="container" id="blackboard">
+	<div class="row">
+	<div class="col-md-3">
+		<ul class="groceries" id="list">
+		</ul>
+		
+</div>
+<div class="col-md-3">
+	<ul class="groceries1" id="list">
+			
+		</ul>
+</div>
+<div class="col-md-3">
+	<ul class="groceries2" id="list">
+
+	</ul>
+
+	</div>
+	<div class="col-md-3">
+		<ul class="groceries3" id="list">
+
+		</ul>
+
+	</div>
+
+	</div>
+		</div>
+
+
+    <div class="container" id="input">
+      <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+      <form>
+        <input type="text" name="item" id="item-Input"required placeholder='enter item'>
+    </form>
+  </div>
+  <div class="col-md-4">
+  </div>
+
+</div>
+    </div>
+
+		<div class="container" id="btnrow">
+			<div class="row">
+				<div class="col-md-4">
+ 
+				</div>
+			</div class="col-md-4">
+
+<button id="btn">add item to list</button>
+      <h5><i>Click on an item to remove it</i></h5>
+			
+
+		</div>
+		<div class="col-md-4">
+
+		</div>
+
+			</div>
+</div>
+
+  
+
+		
+  
+  <script> 
+    
+   $(document).ready(function(){
+
+      // empty array to hold our list of items //
+      var groceryList = [];
+
+
+
+
+
+// our function to prompt for user input and append our list accordingly //
+  
+  
+ $("#btn").click(function() {
+  var item = document.getElementById('item-Input').value;
+    groceryList.push(item);
+    if(groceryList.length <= 25){
+      $(".groceries").append("<li>" + item + "</li>");
+    } else if(groceryList.length > 25 && groceryList.length <= 50){
+      $(".groceries1").append("<li>" + item + "</li>");
+    }else if(groceryList.length > 50 && groceryList.length <= 75){
+    	 $(".groceries2").append("<li>" + item + "</li>");
+    }else if(groceryList.length > 75 && groceryList.length <= 100){
+    	 $(".groceries3").append("<li>" + item + "</li>");
+    }else{
+    	alert("remove an item to add a new one");
+    }
+
+    
+   
+    console.log(groceryList);
+    return groceryList;
+  });
+
+// our remove list item function ... need to clean this up with a loop somehow? //
+
+$(".groceries").on("click","li", function(){
+  var i = $(this).index();
+  groceryList.splice(i, 1);
+  $(this).remove("li");
+
+     console.log(groceryList.length);
+     console.log(groceryList);;
+     console.log(i);
+
+    return groceryList;
+    });
+
+
+$(".groceries1").on("click","li", function(){
+      $(this).remove("li");
+      groceryList--;
+
+    return groceryList;
+    });
+
+$(".groceries2").on("click","li", function(){
+      $(this).remove("li");
+      groceryList--;
+
+    return groceryList;
+    });
+
+$(".groceries3").on("click","li", function(){
+      $(this).remove("li");
+      groceryList--;
+
+    return groceryList;
+    });
+
+
+
+});
+
+
+
+    
+  </script>
+
+</body>
+<footer>
+
+	</footer>
+</html>
+
+
+

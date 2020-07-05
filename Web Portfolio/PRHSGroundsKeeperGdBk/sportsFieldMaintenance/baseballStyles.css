@@ -1,0 +1,15 @@
+p {
+	font-family: serif;
+}
+header {
+	text-align: center;
+	height: 200px;
+	font-size: 60px;
+	font-weight: bold;
+	padding-top: 50px; 
+}
+
+li {
+	font-size: 20px;
+	padding-bottom: 10px;
+}

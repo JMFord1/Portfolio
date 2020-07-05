@@ -1,0 +1,49 @@
+header {
+	text-align: center;
+	color: white;
+	background-color: #4edce6;
+	height: 100px;
+	}
+
+body {
+	background-color:#534ee6 ;
+}
+
+img {
+
+	border-radius: 25px;
+}
+
+
+footer li {
+	display: inline-block;
+	list-style-type: none;
+
+	padding-left: 10px;
+}
+
+footer {
+	text-align: center;
+	padding-left: 20px;
+}
+
+footer a {
+	list-style-type: none;
+}
+
+a{
+	list-style-type: none;
+	text-decoration: none;
+	color: #4ee658;
+}
+.card {
+	text-align: center;
+	color: #4ee658;
+	padding-top: 15px;
+}
+#games {
+}
+
+#apps {
+	padding-top: 25px;
+}

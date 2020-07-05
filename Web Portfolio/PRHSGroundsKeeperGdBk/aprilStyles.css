@@ -1,0 +1,70 @@
+
+
+h1,  {
+	text-align: center;
+	padding-top: 50px;
+	font-family: serif;
+}
+
+ul {
+	text-align: center;
+}
+
+.priority ul {
+	list-style-type: none;
+	text-align: left;
+}
+
+.april {
+	text-align: center;
+	font-size: 60px;
+	font-family: serif;
+	margin-bottom: 15px;
+}
+
+.spring-sports li{
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+	display: inline-block;
+	list-style-type: none;
+}
+
+.baseball {
+	display: inline;
+	text-align: center;
+}
+
+.priority {
+	margin-top: 10px;
+	margin-left: 25px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.bb-tasks {
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 50px;
+	line-height: 25px;
+	list-style-type: none;
+}
+
+.track {
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.track-tasks {
+	text-align: center;
+	padding-right: 30px;
+	padding-top: 25px;
+	line-height: 25px;
+	list-style-type: none;
+}
+
+.equipment {
+	text-align: center;
+	font-weight: bold;
+}
